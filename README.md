@@ -1,2 +1,2 @@
-# Javascript-to-HTML-Interactions
-Read the t  i t l e --;
+# JavaScript-to-HTML-Interactions
+Read the title --;
