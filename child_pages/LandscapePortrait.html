@@ -30,6 +30,24 @@
         <!-- Ensures this FORM doesn't work with PHP or other server side scripting languages-->
 
       <p>&nbsp;</p>
+      <!-- See: https://www.w3schools.com/html/html_entities.asp-->
+      <!-- Non-breaking real space, adds real space to webpage that is not eliminated by browser (hard coded space)-->
+      <p>
+        <label for="textfield">Width:</label>
+        <input name="textfield1" type="text" id="textfield1">
+        <a id="validatityTest1">See The Alert</p>
+      </p>
+      <p>
+        <label for="textfield2">Height:</label>
+        <input name="textfield2" type="text" id="textfield2">
+        <a id="validatityTest2">See The Alert</p>
+      </p>
+      <!-- Below is the full HTML FORM Template for all Assignments-->
+
+      <form action="x.html" method="post" onsubmit="event.preventDefault();">
+        <!-- Ensures this FORM doesn't work with PHP or other server side scripting languages-->
+
+      <p>&nbsp;</p>
         <fieldset>
           <legend>Case Studies</legend>
           <br>
@@ -57,7 +75,13 @@
 
         <p>&nbsp;</p>
         <!-- Submit Button-->
-        <input type="submit" id="subBtn" value="Submit information" />
+        <br><br>
+  <button type="button" onclick="main()">Submit</button>
+  <br>
+  <h3>The Answer is:
+    <a id="answer">What is the Answer?!!!</a>
+  </h3>
+  
 <p id="large"></p>
 
 <!-- The rest of the HTML Layout is below simply to maintain the idea of starting wtih a boilerplate -->
@@ -70,7 +94,7 @@
     <br><br><br>
 
     <!-- This is an exemplar link to the associated JavaScript DOC in another folder-->
-    <script src="../scripts/Modulus.js"></script>
+    <script src="../scripts/LandscapePortrait.js"></script>
 
   </body>
 

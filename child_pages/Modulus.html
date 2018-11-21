@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
   <head>
@@ -33,44 +33,19 @@
       <!-- See: https://www.w3schools.com/html/html_entities.asp-->
       <!-- Non-breaking real space, adds real space to webpage that is not eliminated by browser (hard coded space)-->
       <p>
-        <label for="textfield">Number 1:</label>
+        <label for="textfield">Bigger:</label>
         <input name="textfield1" type="text" id="textfield1">
+        <a id="validatityTest1">See The Alert</p>
       </p>
       <p>
-        <label for="textfield2">Number 2:</label>
+        <label for="textfield2">Smaller:</label>
         <input name="textfield2" type="text" id="textfield2">
+        <a id="validatityTest2">See The Alert</p>
       </p>
-      <!-- Textarea is mutliline plain text editing control-->
-      <p>
-        <label for="tArea">Text Area:</label>
-        <textarea type="tArea" cols="20" rows="4" id="password"></textarea>
-      </p>
-      <p>&nbsp;</p>
+      <!-- Below is the full HTML FORM Template for all Assignments-->
 
-        <fieldset>
-          <legend>Case Studies</legend>
-          <br>
-          <div>Test Case Examples
-          <ul>
-            <li>
-          </ul>
-          </div>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio1" id="RadioGroup1_0">
-              Radio 1
-            </label>
-            <br>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio2" id="RadioGroup1_1">
-              Radio 2
-            </label>
-            <br>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio3" id="RadioGroup1_2">
-              Radio 3
-            </label>
-            <br>
-          </fieldset>
+      <form action="x.html" method="post" onsubmit="event.preventDefault();">
+        <!-- Ensures this FORM doesn't work with PHP or other server side scripting languages-->
 
       <p>&nbsp;</p>
         <fieldset>
@@ -78,8 +53,7 @@
           <br>
           <div>Test Case Examples
           <ul>
-            <li>
-          </ul>
+            <li> Max of Two Numbers = This dictates if a number is bigger or smaller! enough said.
           </div>
             <label>
               <input type="checkbox" name="CheckboxGroup1" nalue="checkbox1" id="CheckboxGroup1_0">
@@ -100,8 +74,14 @@
 
         <p>&nbsp;</p>
         <!-- Submit Button-->
-        <input type="submit" id="subBtn" value="Submit information" />
+        <br><br>
+  <button type="button" onclick="Submit">Submit</button>
+  <br>
+  <h3>The Answer is:
+    <a id="answer">What is the Answer?!!!</a>
+  </h3>
 
+<p id="large"></p>
 
 <!-- The rest of the HTML Layout is below simply to maintain the idea of starting wtih a boilerplate -->
       <article><p></p></article>
@@ -113,7 +93,7 @@
     <br><br><br>
 
     <!-- This is an exemplar link to the associated JavaScript DOC in another folder-->
-    <script src="../scripts/childTemplate.js"></script>
+    <script src="../scripts/Modulus.js"></script>
 
   </body>
 

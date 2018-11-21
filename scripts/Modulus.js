@@ -1,4 +1,4 @@
-console.log("Yay, you made it to landscape and Portrait!")
+console.log("Yay, you made it to Modulus!")
 
 let stop = false;
 
@@ -12,15 +12,21 @@ function testNaN (number) {
   }
 
 
-function geometry (width, height){
-    if (width == height) return 'Square'; //must be first, return will not allow rest of code to run
-    return (width > height) ? 'Landscape' : 'Portrait'; //ternary operator example
+function SkipCounting (number, skipCount, startingNumber){
+  let number = [4, 7]; //Boundary Numbers
+  let skipCount = 4; //Number of skipCounting between each element of the sequence, used in FOR Loop
+  let difference = number[1] - number[2]; //Difference, mandatory expectation
+  let startingNumber = number[1]; //Hint: used in the FOR Loop
+  for (let i=1; i<=20; i++){
+    even = (startingNumber += skipCount) % 2;
+    odd = (startingNumber += skipCount) % 2;
+    //if (!=0), odd;
+    console.log(number);
+    console.log("This number is", even, "; This iteration is number", i+skipCount);
   }
+}
 
 function main () {
-
-    let firstNumber, secondNumber, text;
-
     //Get the value of the Width Input Field
     firstNumber = document.getElementById("textfield1").value;
 
@@ -35,10 +41,8 @@ function main () {
 
   if (stop == true){
   document.getElementById("large").innerHTML = "Restart, please and thank you!"
-  }
-
-  else {
-  console.log("Hey, what did you say? I don't get it.", geometry (firstNumber, secondNumber));
+  } else {
+  console.log("The Biggest Number is", big);
   document.getElementById("large").innerHTML = "Um...I don't get this. Can you please make it easier?";
-}
+  }
 }

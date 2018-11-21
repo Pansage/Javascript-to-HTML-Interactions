@@ -1,4 +1,4 @@
-console.log("Yay, you made it to landscape and Portrait!")
+console.log("Yay, you made it to Maximum Numbers!")
 
 let stop = false;
 
@@ -12,14 +12,13 @@ function testNaN (number) {
   }
 
 
-function geometry (width, height){
-    if (width == height) return 'Square'; //must be first, return will not allow rest of code to run
-    return (width > height) ? 'Landscape' : 'Portrait'; //ternary operator example
+function geometry (one, two){
+  if (one > two) return one;
+  else if (one < two) return two;
+  else console.log ('The numbers are the same!')
   }
 
 function main () {
-
-    let firstNumber, secondNumber, text;
 
     //Get the value of the Width Input Field
     firstNumber = document.getElementById("textfield1").value;
@@ -38,7 +37,7 @@ function main () {
   }
 
   else {
-  console.log("Hey, what did you say? I don't get it.", geometry (firstNumber, secondNumber));
+  console.log("The Biggest Number is", geometry(firstNumber,secondNumber));
   document.getElementById("large").innerHTML = "Um...I don't get this. Can you please make it easier?";
 }
 }
